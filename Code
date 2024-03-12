@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set background color and font styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:lightblue;
+        }
+
+        /* Header styles */
+        header {
+            background-color:black;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color:crimson;
+        }
+
+        /* Section styles */
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AASHIKA B</h1>
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <p>I am currently pursuing Bachelor of Engineering in the stream of Computer Science. I am passionate in coding. I want to seek knowledge
+            by attending these sorts of Internship. I have completed both English and Tamil typewriting with the certification of distinction.
+        </p>
+    </section>
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <div class="skills">
+            <h3>Programming languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Front-End</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>CERTIFICATES</h2>
+        <div class="certificates">
+            <ul>
+                <li><b>Cisco - </b>Introduction to Cybersecurity and Cybersecurity Essentials.</li>
+                <li><b>Skillrack - </b>Java Basics.</li>
+                <li>Energy Swaraj Literacy Program.</li>
+            </ul>
+        </div>
+    
+    </section>
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <p><b>Email:</b> aashika010106@gmail.com</p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/aashika-b-6a1130290">My Profile</a></p>
+    </section>
+    <footer>
+        <p>© 2024 AASHIKA</p>
+    </footer>
+    <script>
+        
+        document.querySelectorAll('nav a').forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
